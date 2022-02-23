@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { mainColor } from '../../../shared/styles/consts';
 
 import Copyright from '../../__ui/Copyright'
 
@@ -57,7 +58,7 @@ export default function index(): JSX.Element {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: '#f1be09' }}>
+            <Avatar sx={{ m: 1, bgcolor: mainColor }}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">

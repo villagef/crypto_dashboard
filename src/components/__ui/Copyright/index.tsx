@@ -8,7 +8,6 @@ export default function index(props: any): JSX.Element {
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
           {'Copyright © '}
           {new Date().getFullYear()}
-          {'.'}
         </Typography>
       );
 }

@@ -1,11 +1,10 @@
-import './App.css';
 import Layout from "./components/templates"
-import HomePage from "./components/__pages/Home"
+import Routes from './routes'
 
 function App() {
   return (
     <Layout>
-      <HomePage />
+      <Routes />
     </Layout>
   );
 }
