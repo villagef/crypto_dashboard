@@ -1,5 +1,5 @@
-import { useState, useEffect, memo } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect, memo, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 import { ROUTES_CONFIG } from "./routes";
 import { IRouteConfig } from "./types";
 
@@ -25,12 +25,11 @@ function RoutesArray() {
       generateRouteContent(route)
     );
   };
-  
 
   return (
-    <BrowserRouter>
+    <Suspense fallback={<div>Loading...</div>}>
       <Routes>{allRoutes}</Routes>
-    </BrowserRouter>
+    </Suspense>
   );
 }
 

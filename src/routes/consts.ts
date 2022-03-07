@@ -1,4 +1,6 @@
 export const ROUTE_PATHS = {
     home: "/",
-    dashboard: "/dashboard"
+    login: "/login",
+    add: "/add",
+    settings: "/settings"
 }
