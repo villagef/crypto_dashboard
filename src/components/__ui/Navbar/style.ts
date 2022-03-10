@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { makeStyles } from "@material-ui/core";
-import { mainColor } from "../../../shared/styles/consts";
 
 export const NavbarWrapper = styled.div`
   display: flex;
@@ -22,8 +21,8 @@ export const NavbarLink = styled.div`
   color: red;
 `;
 
-export const useStyles = makeStyles({
-  root: {
-    color: mainColor
-  },
-});
+export const useStyles = makeStyles(theme => ({
+  root: (props: any) => ({
+    color: props.iconColor
+  }),
+}));
