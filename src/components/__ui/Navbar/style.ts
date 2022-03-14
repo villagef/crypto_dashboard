@@ -25,4 +25,8 @@ export const useStyles = makeStyles(theme => ({
   root: (props: any) => ({
     color: props.iconColor
   }),
+  switch: (props: any) => ({
+    transform: 'rotate(90deg)',
+    margin: "10px 0px"
+  }),
 }));

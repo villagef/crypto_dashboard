@@ -7,7 +7,8 @@ export const lightTheme = {
   text: "#818181",
   mainColor: "#f1be09",
   warningColor: "#ea4335",
-  iconColor: "#141a2c"
+  iconColor: "#141a2c",
+  fontColor: "black"
 };
 
 export const darkTheme = {
@@ -16,5 +17,6 @@ export const darkTheme = {
   text: "#c1c1c1",
   mainColor: "#f1be09",
   warningColor: "#ea4335",
-  iconColor: "#f1be09"
+  iconColor: "#f1be09",
+  fontColor: "white"
 };

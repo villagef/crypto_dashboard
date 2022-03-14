@@ -5,7 +5,8 @@ export const StyledLayout = styled.div`
     height: 100%;
     width: 100%;
     flex-direction: row;
-    background: ${props => props.theme.bodyBg}
+    background: ${props => props.theme.bodyBg};
+    color: ${props => props.theme.fontColor}
 `
 
 export const StyledMain = styled.div`

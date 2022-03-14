@@ -7,17 +7,13 @@ import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import { Link } from "react-router-dom";
 import { ROUTE_PATHS } from "../../../routes/consts";
 import { Switch } from "@material-ui/core";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
 const Navbar = (props: any): JSX.Element => {
   const classes = useStyles(props.theme);
   return (
     <NavbarWrapper>
-      <Switch
-        checked={props.isDark}
-        onChange={() => props.setIsDark((prev: boolean) => !prev)}
-        name="mode"
-        color="primary"
-      />
       <NavbarLink>
         <Link to={ROUTE_PATHS.home}>
           <HomeOutlinedIcon className={classes.root} />
@@ -38,6 +34,16 @@ const Navbar = (props: any): JSX.Element => {
           <LogoutOutlinedIcon className={classes.root} />
         </Link>
       </NavbarLink>
+      <br />
+      <DarkModeOutlinedIcon className={classes.root} />
+      <Switch
+        checked={props.isDark}
+        onChange={() => props.setIsDark((prev: boolean) => !prev)}
+        name="mode"
+        color='primary'
+        className={classes.switch}
+      />
+      <LightModeOutlinedIcon className={classes.root} />
     </NavbarWrapper>
   );
 };

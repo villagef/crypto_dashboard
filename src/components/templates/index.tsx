@@ -11,7 +11,7 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={isDark ? lightTheme : darkTheme}>
       <StyledLayout>
-        <Navbar theme={isDark ? lightTheme : darkTheme} theisDarkme={isDark} setIsDark={setIsDark} />
+        <Navbar theme={isDark ? lightTheme : darkTheme} theisDarkme={isDark} setIsDark={setIsDark} isDark={isDark} />
         <StyledMain>{children}</StyledMain>
       </StyledLayout>
     </ThemeProvider>
